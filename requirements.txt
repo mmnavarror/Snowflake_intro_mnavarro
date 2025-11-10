@@ -1,1 +1,4 @@
 # Scripts SQL ejecutables directamente en Snowflake
+snowflake-connector-python
+pandas
+jupyter
