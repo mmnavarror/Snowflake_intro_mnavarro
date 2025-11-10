@@ -5,7 +5,7 @@ USE SCHEMA demo_schema;
 CREATE OR REPLACE TABLE productos (
   id INT,
   nombre STRING,
-  marca STRING
+  marca STRING,
   modelo STRING,
   genero STRING,
   talla STRING,
