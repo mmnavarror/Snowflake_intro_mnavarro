@@ -11,7 +11,8 @@ CREATE OR REPLACE TABLE productos (
   talla STRING,
   caracteristicas STRING,
   historia STRING,
-  precio FLOAT,
-  sale FLOAT
+  stock float,
+  precio_venta FLOAT,
+  precio_oferta FLOAT
 );
 
