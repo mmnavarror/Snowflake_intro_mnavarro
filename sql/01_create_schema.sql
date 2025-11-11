@@ -18,4 +18,10 @@ CREATE OR REPLACE TABLE productos (
 
 -- VISTA
 CREATE OR REPLACE VIEW vw_productos_en_oferta AS
+SELECT nombre, marca, modelo, talla,
+       precio_venta, precio_oferta,
+       (precio_venta - precio_oferta) AS descuento,
+       ROUND((precio_venta - precio_oferta) / precio_venta * 100, 1) AS descuento_pct
+FROM productos
+WHERE precio_oferta > 0;
 
