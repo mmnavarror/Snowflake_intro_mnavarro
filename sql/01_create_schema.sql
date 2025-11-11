@@ -16,3 +16,6 @@ CREATE OR REPLACE TABLE productos (
   precio_oferta FLOAT
 );
 
+-- VISTA
+CREATE OR REPLACE VIEW vw_productos_en_oferta AS
+
